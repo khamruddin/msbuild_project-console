@@ -9,7 +9,8 @@ pipeline {
         }
         stage('Build Stage') {
             steps {
-                bat "dotnet clean /ConsoleApp/ConsoleApp/ConsoleApp.csproj"
+               // bat "dotnet clean /ConsoleApp/ConsoleApp/ConsoleApp.csproj"
+                bat "msbuild.exe \"${WORKSPACE}\my project\ConsoleApp.sln\" -t:clean -t:build -restore /property:Configuration=Release -p:RestorePackagesConfig=true"
             }
         }
         
