@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Stage') {
             steps {
-                url: 'https://github.com/khamruddin/msbuild_project-console.git', branch: 'master'
+                url: 'https://github.com/khamruddin/msbuild_project-console.git'
             }
         }
         stage('Build Stage') {
