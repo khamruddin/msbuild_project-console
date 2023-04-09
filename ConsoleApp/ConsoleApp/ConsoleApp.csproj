@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     
-    <Target Name="assembleDebug" Condition=" '$(Configuration)' == 'Debug' " DependsOnTargets="Build">
+    <Target Name="assembleDebug" Condition=" '$(Configuration)' == 'Debug' " DependsOnTargets="Build"> </Target>
     
 
     
