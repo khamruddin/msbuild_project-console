@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Stage') {
             steps {
-                bat "dotnet clean YourProjectPath\\Your_Project.csproj"
+                bat "dotnet clean /ConsoleApp/ConsoleApp/ConsoleApp.csproj"
             }
         }
         
