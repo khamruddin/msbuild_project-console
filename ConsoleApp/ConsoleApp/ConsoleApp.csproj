@@ -3,7 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <PublishDir>$(OutDir)_PublishedWebsites\NetCoreWebApp\</PublishDir>
+    
+    <Target Name="assembleDebug" Condition=" '$(Configuration)' == 'Debug' " DependsOnTargets="Build">
+    
 
     
   </PropertyGroup>
