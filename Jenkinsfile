@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build Stage') {
             steps {
-                bat 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\dotnet-demo\\ConsoleApp.sln --configuration Release'
+                bat "dotnet clean YourProjectPath\\Your_Project.csproj"
             }
         }
         
